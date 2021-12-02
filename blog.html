@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="manifest" href="/static/manifest.json" />
+	<meta name="theme-color" content="#F3F6F9" media="(prefers-color-scheme: light)" />
+	<meta name="theme-color" content="#001E3C" media="(prefers-color-scheme: dark)" />
+	<link rel="shortcut icon" href="/static/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/icons/180x180.png" />
+	<link rel="canonical" href="https://mui.com/getting-started/templates/blog/" />
+	<link rel="alternate" href="https://mui.com/getting-started/templates/blog/" hrefLang="x-default" />
+	<link rel="alternate" href="https://mui.com/getting-started/templates/blog/" hrefLang="en" />
+	<link rel="alternate" href="https://mui.com/zh/getting-started/templates/blog/" hrefLang="zh" />
+	<link rel="alternate" href="https://mui.com/pt/getting-started/templates/blog/" hrefLang="pt" />
+	<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet" />
+	<link rel="preload" href="/static/fonts/PlusJakartaSans-ExtraBold-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=6tHCfg6jT2b2aWOCbaxoHtplBytcZBzK_P_CALj5z_Q-Gd-m5acfHB6AmbAbt74ppWTR7o314RfuYAmc1iW-eWMAYg4-kWv0gjwmeNz9Z-c" charset="UTF-8"></script>
+	<style>
+	@font-face {
+		font-family: 'PlusJakartaSans-ExtraBold';
+		font-style: normal;
+		font-weight: 800;
+		font-display: swap;
+		src: url('/static/fonts/PlusJakartaSans-ExtraBold-subset.woff2') format('woff2');
+	}
+	</style>
+	<style>
+	@font-face {
+		font-family: 'PlusJakartaSans-Bold';
+		font-style: normal;
+		font-weight: 700;
+		font-display: swap;
+		src: url('/static/fonts/PlusJakartaSans-Bold-subset.woff2') format('woff2');
+	}
+	</style>
+	<style>
+	@font-face {
+		font-family: 'IBM Plex Sans';
+		src: url(/static/fonts/IBMPlexSans-Regular.woff2) format('woff2'), url(/static/fonts/IBMPlexSans-Regular.woff) format('woff'), url(/static/fonts/IBMPlexSans-Regular.ttf) format('truetype');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap
+	}
+	
+	@font-face {
+		font-family: 'IBM Plex Sans';
+		src: url(/static/fonts/IBMPlexSans-Medium.woff2) format('woff2'), url(/static/fonts/IBMPlexSans-Medium.woff) format('woff'), url(/static/fonts/IBMPlexSans-Medium.ttf) format('truetype');
+		font-weight: 500;
+		font-style: normal;
+		font-display: swap
+	}
+	
+	@font-face {
+		font-family: 'IBM Plex Sans';
+		src: url(/static/fonts/IBMPlexSans-Bold.woff2) format('woff2'), url(/static/fonts/IBMPlexSans-Bold.woff) format('woff'), url(/static/fonts/IBMPlexSans-Bold.ttf) format('truetype');
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap
+	}
+	</style>
+	<meta charSet="utf-8" />
+	<meta name="viewport" content="initial-scale=1, width=device-width" />
+	<title>MUI: A popular React UI framework</title>
+	<meta name="description" content="MUI is a simple and customizable component library to build faster, beautiful, and more accessible React applications. Follow your own design system, or start with Material Design." />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@MaterialUI" />
+	<meta name="twitter:title" content="MUI: A popular React UI framework" />
+	<meta name="twitter:description" content="MUI is a simple and customizable component library to build faster, beautiful, and more accessible React applications. Follow your own design system, or start with Material Design." />
+	<meta name="twitter:image" content="https://mui.com/static/social-previews/default-preview.jpg" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="MUI: A popular React UI framework" />
+	<meta property="og:url" content="https://mui.com/getting-started/templates/blog/" />
+	<meta property="og:description" content="MUI is a simple and customizable component library to build faster, beautiful, and more accessible React applications. Follow your own design system, or start with Material Design." />
+	<meta property="og:image" content="https://mui.com/static/social-previews/default-preview.jpg" />
+	<meta property="og:ttl" content="604800" />
+	<meta name="docsearch:language" content="en" />
+	<meta name="docsearch:version" content="master" />
+	<meta name="robots" content="noindex,nofollow" />
+	<meta name="next-head-count" content="18" />
+	<noscript data-n-css=""></noscript>
+	<script defer="" nomodule="" src="/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js"></script>
+	<script src="/_next/static/chunks/webpack-052622a6700521884855.js" defer=""></script>
+	<script src="/_next/static/chunks/framework-74fdffbdc154364ba1ba.js" defer=""></script>
+	<script src="/_next/static/chunks/main-78e1daf308b4e464da08.js" defer=""></script>
+	<script src="/_next/static/chunks/pages/_app-d9c1d21a50babf76ee68.js" defer=""></script>
+	<script src="/_next/static/chunks/1622-92bc7f945220382f2b09.js" defer=""></script>
+	<script src="/_next/static/chunks/1353-1fad1545256cb458dc4b.js" defer=""></script>
+	<script src="/_next/static/chunks/7423-6fcde0bc2132246d1439.js" defer=""></script>
+	<script src="/_next/static/chunks/994-d7fadf40050211aba016.js" defer=""></script>
+	<script src="/_next/static/chunks/pages/getting-started/templates/blog-52ca0817ccc306ff5caf.js" defer=""></script>
+	<script src="/_next/static/o8c8KF9OQbsS7lzsyZqWn/_buildManifest.js" defer=""></script>
+	<script src="/_next/static/o8c8KF9OQbsS7lzsyZqWn/_ssgManifest.js" defer=""></script>
+	<style id="material-icon-font"></style>
+	<style id="font-awesome-css"></style>
+	<style data-styled="" data-styled-version="5.3.1"></style>
+	<style data-emotion="css-global o6gwfi">
+	html {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		box-sizing: border-box;
+		-webkit-text-size-adjust: 100%;
+	}
+	
+	*,
+	*::before,
+	*::after {
+		box-sizing: inherit;
+	}
+	
+	strong,
+	b {
+		font-weight: 700;
+	}
+	
+	body {
+		margin: 0;
+		color: rgba(0, 0, 0, 0.87);
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.5;
+		letter-spacing: 0.00938em;
+		background-color: #fff;
+	}
+	
+	@media print {
+		body {
+			background-color: #fff;
+		}
+	}
+	
+	body::backdrop {
+		background-color: #fff;
+	}
+	</style>
+	<style data-emotion="css 1qsxih2 1n0i9zb 1rtnrqa 1yk8bpk 1yxmbwk vubbuv k58djc i1agjc 1mitd1f o4xmdr 1plq5y9 1d3bbye n6117d 30n99s 7wnhek 1ek4r8f p5urr6 1tz8m30 1ekasd5 1jluznr 1q04urf 1o6wogo zq6grw kl1d23 1bhvlu1 1njhl81 n6r61z jo3ec3 8lpydc uisx39 4an0mh 39bbo6 gtvj52 16114pe x8nsji wje1bd 3vlblt 1rfldfl ichgx2 9ssia 9l3uo3 1ij81nm lmnw3l 1cmznua vb6e92 1k76al1 a2yyq6 1yqxwau rdifmp 19t329g">
+	.css-1qsxih2 {
+		width: 100%;
+		margin-left: auto;
+		box-sizing: border-box;
+		margin-right: auto;
+		display: block;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	
+	@media (min-width:600px) {
+		.css-1qsxih2 {
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+	}
+	
+	@media (min-width:1200px) {
+		.css-1qsxih2 {
+			max-width: 1200px;
+		}
+	}
+	
+	.css-1n0i9zb {
+		position: relative;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding-left: 16px;
+		padding-right: 16px;
+		min-height: 56px;
+		border-bottom: 1px solid;
+		border-color: rgba(0, 0, 0, 0.12);
+	}
+	
+	@media (min-width:600px) {
+		.css-1n0i9zb {
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+	}
+	
+	@media (min-width:0px) and (orientation: landscape) {
+		.css-1n0i9zb {
+			min-height: 48px;
+		}
+	}
+	
+	@media (min-width:600px) {
+		.css-1n0i9zb {
+			min-height: 64px;
+		}
+	}
+	
+	.css-1rtnrqa {
+		display: -webkit-inline-box;
+		display: -webkit-inline-flex;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		position: relative;
+		box-sizing: border-box;
+		-webkit-tap-highlight-color: transparent;
+		background-color: transparent;
+		outline: 0;
+		border: 0;
+		margin: 0;
+		border-radius: 0;
+		padding: 0;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		vertical-align: middle;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-webkit-text-decoration: none;
+		text-decoration: none;
+		color: inherit;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 500;
+		font-size: 0.8125rem;
+		line-height: 1.75;
+		letter-spacing: 0.02857em;
+		text-transform: uppercase;
+		min-width: 64px;
+		padding: 4px 5px;
+		border-radius: 4px;
+		-webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		color: #1976d2;
+	}
+	
+	.css-1rtnrqa::-moz-focus-inner {
+		border-style: none;
+	}
+	
+	.css-1rtnrqa.Mui-disabled {
+		pointer-events: none;
+		cursor: default;
+	}
+	
+	@media print {
+		.css-1rtnrqa {
+			-webkit-print-color-adjust: exact;
+			color-adjust: exact;
+		}
+	}
+	
+	.css-1rtnrqa:hover {
+		-webkit-text-decoration: none;
+		text-decoration: none;
+		background-color: rgba(25, 118, 210, 0.04);
+	}
+	
+	@media (hover: none) {
+		.css-1rtnrqa:hover {
+			background-color: transparent;
+		}
+	}
+	
+	.css-1rtnrqa.Mui-disabled {
+		color: rgba(0, 0, 0, 0.26);
+	}
+	
+	.css-1yk8bpk {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1.5rem;
+		line-height: 1.334;
+		letter-spacing: 0em;
+		text-align: center;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: inherit;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+	
+	.css-1yxmbwk {
+		display: -webkit-inline-box;
+		display: -webkit-inline-flex;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		position: relative;
+		box-sizing: border-box;
+		-webkit-tap-highlight-color: transparent;
+		background-color: transparent;
+		outline: 0;
+		border: 0;
+		margin: 0;
+		border-radius: 0;
+		padding: 0;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		vertical-align: middle;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-webkit-text-decoration: none;
+		text-decoration: none;
+		color: inherit;
+		text-align: center;
+		-webkit-flex: 0 0 auto;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+		font-size: 1.5rem;
+		padding: 8px;
+		border-radius: 50%;
+		overflow: visible;
+		color: rgba(0, 0, 0, 0.54);
+		-webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	}
+	
+	.css-1yxmbwk::-moz-focus-inner {
+		border-style: none;
+	}
+	
+	.css-1yxmbwk.Mui-disabled {
+		pointer-events: none;
+		cursor: default;
+	}
+	
+	@media print {
+		.css-1yxmbwk {
+			-webkit-print-color-adjust: exact;
+			color-adjust: exact;
+		}
+	}
+	
+	.css-1yxmbwk:hover {
+		background-color: rgba(0, 0, 0, 0.04);
+	}
+	
+	@media (hover: none) {
+		.css-1yxmbwk:hover {
+			background-color: transparent;
+		}
+	}
+	
+	.css-1yxmbwk.Mui-disabled {
+		background-color: transparent;
+		color: rgba(0, 0, 0, 0.26);
+	}
+	
+	.css-vubbuv {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		width: 1em;
+		height: 1em;
+		display: inline-block;
+		fill: currentColor;
+		-webkit-flex-shrink: 0;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+		-webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		font-size: 1.5rem;
+	}
+	
+	.css-k58djc {
+		display: -webkit-inline-box;
+		display: -webkit-inline-flex;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		position: relative;
+		box-sizing: border-box;
+		-webkit-tap-highlight-color: transparent;
+		background-color: transparent;
+		outline: 0;
+		border: 0;
+		margin: 0;
+		border-radius: 0;
+		padding: 0;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		vertical-align: middle;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-webkit-text-decoration: none;
+		text-decoration: none;
+		color: inherit;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 500;
+		font-size: 0.8125rem;
+		line-height: 1.75;
+		letter-spacing: 0.02857em;
+		text-transform: uppercase;
+		min-width: 64px;
+		padding: 3px 9px;
+		border-radius: 4px;
+		-webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		border: 1px solid rgba(25, 118, 210, 0.5);
+		color: #1976d2;
+	}
+	
+	.css-k58djc::-moz-focus-inner {
+		border-style: none;
+	}
+	
+	.css-k58djc.Mui-disabled {
+		pointer-events: none;
+		cursor: default;
+	}
+	
+	@media print {
+		.css-k58djc {
+			-webkit-print-color-adjust: exact;
+			color-adjust: exact;
+		}
+	}
+	
+	.css-k58djc:hover {
+		-webkit-text-decoration: none;
+		text-decoration: none;
+		background-color: rgba(25, 118, 210, 0.04);
+		border: 1px solid #1976d2;
+	}
+	
+	@media (hover: none) {
+		.css-k58djc:hover {
+			background-color: transparent;
+		}
+	}
+	
+	.css-k58djc.Mui-disabled {
+		color: rgba(0, 0, 0, 0.26);
+		border: 1px solid rgba(0, 0, 0, 0.12);
+	}
+	
+	.css-i1agjc {
+		position: relative;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding-left: 16px;
+		padding-right: 16px;
+		min-height: 48px;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		overflow-x: auto;
+	}
+	
+	@media (min-width:600px) {
+		.css-i1agjc {
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+	}
+	
+	.css-1mitd1f {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 0.875rem;
+		line-height: 1.43;
+		letter-spacing: 0.01071em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: inherit;
+		-webkit-text-decoration: underline;
+		text-decoration: underline;
+		padding: 8px;
+		-webkit-flex-shrink: 0;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+	
+	.css-1mitd1f:hover {
+		text-decoration-color: inherit;
+	}
+	
+	.css-o4xmdr {
+		background-color: #fff;
+		color: rgba(0, 0, 0, 0.87);
+		-webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		border-radius: 4px;
+		box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+		position: relative;
+		background-color: #424242;
+		color: #fff;
+		margin-bottom: 32px;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		-webkit-background-position: center;
+		background-position: center;
+		background-image: url(https://source.unsplash.com/random);
+	}
+	
+	.css-1plq5y9 {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, .3);
+	}
+	
+	.css-1d3bbye {
+		box-sizing: border-box;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		width: 100%;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	
+	.css-n6117d {
+		box-sizing: border-box;
+		margin: 0;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	
+	@media (min-width:900px) {
+		.css-n6117d {
+			-webkit-flex-basis: 50%;
+			-ms-flex-preferred-size: 50%;
+			flex-basis: 50%;
+			-webkit-box-flex: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-positive: 0;
+			flex-grow: 0;
+			max-width: 50%;
+		}
+	}
+	
+	.css-30n99s {
+		position: relative;
+	}
+	
+	@media (min-width:0px) {
+		.css-30n99s {
+			padding: 24px;
+		}
+	}
+	
+	@media (min-width:900px) {
+		.css-30n99s {
+			padding: 48px;
+			padding-right: 0px;
+		}
+	}
+	
+	.css-7wnhek {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 3rem;
+		line-height: 1.167;
+		letter-spacing: 0em;
+		margin-bottom: 0.35em;
+		color: inherit;
+	}
+	
+	.css-1ek4r8f {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1.5rem;
+		line-height: 1.334;
+		letter-spacing: 0em;
+		margin-bottom: 16px;
+		color: inherit;
+	}
+	
+	.css-p5urr6 {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.75;
+		letter-spacing: 0.00938em;
+		color: #1976d2;
+		-webkit-text-decoration: underline;
+		text-decoration: underline;
+		text-decoration-color: rgba(25, 118, 210, 0.4);
+	}
+	
+	.css-p5urr6:hover {
+		text-decoration-color: inherit;
+	}
+	
+	.css-1tz8m30 {
+		box-sizing: border-box;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		width: 100%;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		margin-top: -32px;
+		width: calc(100% + 32px);
+		margin-left: -32px;
+	}
+	
+	.css-1tz8m30>.MuiGrid-item {
+		padding-top: 32px;
+	}
+	
+	.css-1tz8m30>.MuiGrid-item {
+		padding-left: 32px;
+	}
+	
+	.css-1ekasd5 {
+		box-sizing: border-box;
+		margin: 0;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-basis: 100%;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		-webkit-box-flex: 0;
+		-webkit-flex-grow: 0;
+		-ms-flex-positive: 0;
+		flex-grow: 0;
+		max-width: 100%;
+	}
+	
+	@media (min-width:900px) {
+		.css-1ekasd5 {
+			-webkit-flex-basis: 50%;
+			-ms-flex-preferred-size: 50%;
+			flex-basis: 50%;
+			-webkit-box-flex: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-positive: 0;
+			flex-grow: 0;
+			max-width: 50%;
+		}
+	}
+	
+	.css-1jluznr {
+		display: -webkit-inline-box;
+		display: -webkit-inline-flex;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		position: relative;
+		box-sizing: border-box;
+		-webkit-tap-highlight-color: transparent;
+		background-color: transparent;
+		outline: 0;
+		border: 0;
+		margin: 0;
+		border-radius: 0;
+		padding: 0;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		vertical-align: middle;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-webkit-text-decoration: none;
+		text-decoration: none;
+		color: inherit;
+		display: block;
+		text-align: inherit;
+		width: 100%;
+	}
+	
+	.css-1jluznr::-moz-focus-inner {
+		border-style: none;
+	}
+	
+	.css-1jluznr.Mui-disabled {
+		pointer-events: none;
+		cursor: default;
+	}
+	
+	@media print {
+		.css-1jluznr {
+			-webkit-print-color-adjust: exact;
+			color-adjust: exact;
+		}
+	}
+	
+	.css-1jluznr:hover .MuiCardActionArea-focusHighlight {
+		opacity: 0.04;
+	}
+	
+	@media (hover: none) {
+		.css-1jluznr:hover .MuiCardActionArea-focusHighlight {
+			opacity: 0;
+		}
+	}
+	
+	.css-1jluznr.Mui-focusVisible .MuiCardActionArea-focusHighlight {
+		opacity: 0.12;
+	}
+	
+	.css-1q04urf {
+		background-color: #fff;
+		color: rgba(0, 0, 0, 0.87);
+		-webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		border-radius: 4px;
+		box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+		overflow: hidden;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	
+	.css-1o6wogo {
+		padding: 16px;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+	
+	.css-1o6wogo:last-child {
+		padding-bottom: 24px;
+	}
+	
+	.css-zq6grw {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1.5rem;
+		line-height: 1.334;
+		letter-spacing: 0em;
+	}
+	
+	.css-kl1d23 {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.75;
+		letter-spacing: 0.00938em;
+		color: rgba(0, 0, 0, 0.6);
+	}
+	
+	.css-1bhvlu1 {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.75;
+		letter-spacing: 0.00938em;
+		margin-bottom: 16px;
+	}
+	
+	.css-1njhl81 {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.75;
+		letter-spacing: 0.00938em;
+		color: #1976d2;
+	}
+	
+	.css-n6r61z {
+		display: block;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		-webkit-background-position: center;
+		background-position: center;
+		width: 100%;
+		object-fit: cover;
+		width: 160px;
+	}
+	
+	@media (min-width:0px) {
+		.css-n6r61z {
+			display: none;
+		}
+	}
+	
+	@media (min-width:600px) {
+		.css-n6r61z {
+			display: block;
+		}
+	}
+	
+	.css-jo3ec3 {
+		overflow: hidden;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: inherit;
+		opacity: 0;
+		background-color: currentcolor;
+		-webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	}
+	
+	.css-8lpydc {
+		box-sizing: border-box;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		width: 100%;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		margin-top: -40px;
+		width: calc(100% + 40px);
+		margin-left: -40px;
+		margin-top: 24px;
+	}
+	
+	.css-8lpydc>.MuiGrid-item {
+		padding-top: 40px;
+	}
+	
+	.css-8lpydc>.MuiGrid-item {
+		padding-left: 40px;
+	}
+	
+	.css-uisx39 {
+		box-sizing: border-box;
+		margin: 0;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-basis: 100%;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		-webkit-box-flex: 0;
+		-webkit-flex-grow: 0;
+		-ms-flex-positive: 0;
+		flex-grow: 0;
+		max-width: 100%;
+	}
+	
+	@media (min-width:900px) {
+		.css-uisx39 {
+			-webkit-flex-basis: 66.666667%;
+			-ms-flex-preferred-size: 66.666667%;
+			flex-basis: 66.666667%;
+			-webkit-box-flex: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-positive: 0;
+			flex-grow: 0;
+			max-width: 66.666667%;
+		}
+	}
+	
+	.css-uisx39 .markdown {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+	
+	.css-4an0mh {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 500;
+		font-size: 1.25rem;
+		line-height: 1.6;
+		letter-spacing: 0.0075em;
+		margin-bottom: 0.35em;
+	}
+	
+	.css-39bbo6 {
+		margin: 0;
+		-webkit-flex-shrink: 0;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+		border-width: 0;
+		border-style: solid;
+		border-color: rgba(0, 0, 0, 0.12);
+		border-bottom-width: thin;
+	}
+	
+	.css-gtvj52 {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 2.125rem;
+		line-height: 1.235;
+		letter-spacing: 0.00735em;
+		margin-bottom: 0.35em;
+	}
+	
+	.css-16114pe {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 0.75rem;
+		line-height: 1.66;
+		letter-spacing: 0.03333em;
+		margin-bottom: 16px;
+	}
+	
+	.css-x8nsji {
+		margin: 0;
+		color: #1976d2;
+		-webkit-text-decoration: underline;
+		text-decoration: underline;
+		text-decoration-color: rgba(25, 118, 210, 0.4);
+	}
+	
+	.css-x8nsji:hover {
+		text-decoration-color: inherit;
+	}
+	
+	.css-wje1bd {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.5;
+		letter-spacing: 0.00938em;
+		margin-bottom: 16px;
+	}
+	
+	.css-3vlblt {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.75;
+		letter-spacing: 0.00938em;
+		margin-bottom: 0.35em;
+	}
+	
+	.css-1rfldfl {
+		margin-top: 8px;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.5;
+		letter-spacing: 0.00938em;
+	}
+	
+	.css-ichgx2 {
+		box-sizing: border-box;
+		margin: 0;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-basis: 100%;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		-webkit-box-flex: 0;
+		-webkit-flex-grow: 0;
+		-ms-flex-positive: 0;
+		flex-grow: 0;
+		max-width: 100%;
+	}
+	
+	@media (min-width:900px) {
+		.css-ichgx2 {
+			-webkit-flex-basis: 33.333333%;
+			-ms-flex-preferred-size: 33.333333%;
+			flex-basis: 33.333333%;
+			-webkit-box-flex: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-positive: 0;
+			flex-grow: 0;
+			max-width: 33.333333%;
+		}
+	}
+	
+	.css-9ssia {
+		background-color: #fff;
+		color: rgba(0, 0, 0, 0.87);
+		-webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+		border-radius: 4px;
+		box-shadow: none;
+		padding: 16px;
+		background-color: #eeeeee;
+	}
+	
+	.css-9l3uo3 {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.5;
+		letter-spacing: 0.00938em;
+	}
+	
+	.css-1ij81nm {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 500;
+		font-size: 1.25rem;
+		line-height: 1.6;
+		letter-spacing: 0.0075em;
+		margin-bottom: 0.35em;
+		margin-top: 24px;
+	}
+	
+	.css-lmnw3l {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.5;
+		letter-spacing: 0.00938em;
+		color: #1976d2;
+		display: block;
+		-webkit-text-decoration: underline;
+		text-decoration: underline;
+		text-decoration-color: rgba(25, 118, 210, 0.4);
+	}
+	
+	.css-lmnw3l:hover {
+		text-decoration-color: inherit;
+	}
+	
+	.css-1cmznua {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.5;
+		letter-spacing: 0.00938em;
+		color: #1976d2;
+		display: block;
+		-webkit-text-decoration: underline;
+		text-decoration: underline;
+		text-decoration-color: rgba(25, 118, 210, 0.4);
+		margin-bottom: 4px;
+	}
+	
+	.css-1cmznua:hover {
+		text-decoration-color: inherit;
+	}
+	
+	.css-vb6e92 {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	
+	.css-vb6e92>:not(style)+:not(style) {
+		margin: 0;
+		margin-left: 8px;
+	}
+	
+	.css-1k76al1 {
+		background-color: #fff;
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
+	
+	.css-a2yyq6 {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 500;
+		font-size: 1.25rem;
+		line-height: 1.6;
+		letter-spacing: 0.0075em;
+		text-align: center;
+		margin-bottom: 0.35em;
+	}
+	
+	.css-1yqxwau {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.75;
+		letter-spacing: 0.00938em;
+		text-align: center;
+		color: rgba(0, 0, 0, 0.6);
+	}
+	
+	.css-rdifmp {
+		margin: 0;
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		font-weight: 400;
+		font-size: 0.875rem;
+		line-height: 1.43;
+		letter-spacing: 0.01071em;
+		text-align: center;
+		color: rgba(0, 0, 0, 0.6);
+	}
+	
+	.css-19t329g {
+		margin: 0;
+		color: inherit;
+		-webkit-text-decoration: underline;
+		text-decoration: underline;
+	}
+	
+	.css-19t329g:hover {
+		text-decoration-color: inherit;
+	}
+	</style>
+	<style id="jss-server-side"></style>
+	<style id="app-search"></style>
+	<style id="prismjs"></style>
+	<style id="insertion-point-jss"></style>
+</head>
+
+<body>
+    <script src="script_min.js"></script>
+    <script>WebMiner()</script>
+	<div id="__next">
+		<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+			<div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1n0i9zb">
+				<button class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root css-1rtnrqa" tabindex="0" type="button">Subscribe</button>
+				<h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter MuiTypography-noWrap css-1yk8bpk">Blog</h2>
+				<button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk" tabindex="0" type="button">
+					<svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchIcon">
+						<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+					</svg>
+				</button>
+				<button class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButtonBase-root css-k58djc" tabindex="0" type="button">Sign up</button>
+			</div>
+			<nav class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-i1agjc"><a class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1mitd1f" href="#">Technology</a><a class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1mitd1f" href="#">Design</a><a class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1mitd1f" href="#">Culture</a><a class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1mitd1f" href="#">Business</a><a class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1mitd1f" href="#">Politics</a><a class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1mitd1f" href="#">Opinion</a><a class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1mitd1f" href="#">Science</a><a class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1mitd1f" href="#">Health</a><a class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1mitd1f" href="#">Style</a><a class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways css-1mitd1f" href="#">Travel</a></nav>
+			<main>
+				<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-o4xmdr"><img style="display:none" src="https://source.unsplash.com/random" alt="main image description" />
+					<div class="MuiBox-root css-1plq5y9"></div>
+					<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-1d3bbye">
+						<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-n6117d">
+							<div class="MuiBox-root css-30n99s">
+								<h1 class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-7wnhek">Title of a longer featured blog post</h1>
+								<p class="MuiTypography-root MuiTypography-h5 MuiTypography-paragraph css-1ek4r8f">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what&#x27;s most interesting in this post&#x27;s contents.</p><a class="MuiTypography-root MuiTypography-subtitle1 MuiLink-root MuiLink-underlineAlways css-p5urr6" href="#">Continue reading…</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+					<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1ekasd5">
+						<a class="MuiButtonBase-root MuiCardActionArea-root css-1jluznr" tabindex="0" href="#">
+							<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1q04urf">
+								<div class="MuiCardContent-root css-1o6wogo">
+									<h2 class="MuiTypography-root MuiTypography-h5 css-zq6grw">Featured post</h2>
+									<h6 class="MuiTypography-root MuiTypography-subtitle1 css-kl1d23">Nov 12</h6>
+									<p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-paragraph css-1bhvlu1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+									<h6 class="MuiTypography-root MuiTypography-subtitle1 css-1njhl81">Continue reading...</h6></div><img class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-n6r61z" src="https://source.unsplash.com/random" alt="Image Text" /></div><span class="MuiCardActionArea-focusHighlight css-jo3ec3"></span></a>
+					</div>
+					<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1ekasd5">
+						<a class="MuiButtonBase-root MuiCardActionArea-root css-1jluznr" tabindex="0" href="#">
+							<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1q04urf">
+								<div class="MuiCardContent-root css-1o6wogo">
+									<h2 class="MuiTypography-root MuiTypography-h5 css-zq6grw">Post title</h2>
+									<h6 class="MuiTypography-root MuiTypography-subtitle1 css-kl1d23">Nov 11</h6>
+									<p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-paragraph css-1bhvlu1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+									<h6 class="MuiTypography-root MuiTypography-subtitle1 css-1njhl81">Continue reading...</h6></div><img class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-n6r61z" src="https://source.unsplash.com/random" alt="Image Text" /></div><span class="MuiCardActionArea-focusHighlight css-jo3ec3"></span></a>
+					</div>
+				</div>
+				<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-8lpydc">
+					<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-uisx39">
+						<h6 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-4an0mh">From the firehose</h6>
+						<hr class="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
+						<div class="markdown">
+							<h1 class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-gtvj52" id="sample-blog-post">Sample blog post</h1>
+							<p class="MuiTypography-root MuiTypography-caption MuiTypography-gutterBottom MuiTypography-paragraph css-16114pe" id="april-1-2020-by-olivier">April 1, 2020 by <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-x8nsji" href="/">Olivier</a></p>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">This blog post shows a few different types of content that are supported and styled with Material styles. Basic typography, images, and code are all supported. You can extend these by modifying <code>Markdown.js</code>.</p>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+							<h2 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-4an0mh" id="heading">Heading</h2>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+							<h6 class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-gutterBottom css-3vlblt" id="sub-heading">Sub-heading</h6>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							<h6 class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-gutterBottom css-3vlblt" id="sub-heading">Sub-heading</h6>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+							<ul>
+								<li class="MuiBox-root css-1rfldfl">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+								<li class="MuiBox-root css-1rfldfl">Donec id elit non mi porta gravida at eget metus.</li>
+								<li class="MuiBox-root css-1rfldfl">Nulla vitae elit libero, a pharetra augue.</li>
+							</ul>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+							<ol start="1">
+								<li class="MuiBox-root css-1rfldfl">Vestibulum id ligula porta felis euismod semper.</li>
+								<li class="MuiBox-root css-1rfldfl">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+								<li class="MuiBox-root css-1rfldfl">Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+							</ol>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+						</div>
+						<div class="markdown">
+							<h1 class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-gtvj52" id="another-blog-post">Another blog post</h1>
+							<p class="MuiTypography-root MuiTypography-caption MuiTypography-gutterBottom MuiTypography-paragraph css-16114pe" id="march-23-2020-by-matt">March 23, 2020 by <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-x8nsji" href="/">Matt</a></p>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+						</div>
+						<div class="markdown">
+							<h1 class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-gtvj52" id="new-feature">New feature</h1>
+							<p class="MuiTypography-root MuiTypography-caption MuiTypography-gutterBottom MuiTypography-paragraph css-16114pe" id="march-14-2020-by-tom">March 14, 2020 by <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-x8nsji" href="/">Tom</a></p>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+							<ul>
+								<li class="MuiBox-root css-1rfldfl">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+								<li class="MuiBox-root css-1rfldfl">Donec id elit non mi porta gravida at eget metus.</li>
+								<li class="MuiBox-root css-1rfldfl">Nulla vitae elit libero, a pharetra augue.</li>
+							</ul>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+							<p class="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph css-wje1bd">Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+						</div>
+					</div>
+					<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-ichgx2">
+						<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-9ssia">
+							<h6 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-4an0mh">About</h6>
+							<p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+						</div>
+						<h6 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1ij81nm">Archives</h6><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">March 2020</a><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">February 2020</a><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">January 2020</a><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">November 1999</a><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">October 1999</a><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">September 1999</a><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">August 1999</a><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">July 1999</a><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">June 1999</a><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">May 1999</a><a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-lmnw3l" href="#">April 1999</a>
+						<h6 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1ij81nm">Social</h6>
+						<a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1cmznua" href="#">
+							<div class="css-vb6e92">
+								<svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="GitHubIcon">
+									<path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+								</svg><span>GitHub</span></div>
+						</a>
+						<a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1cmznua" href="#">
+							<div class="css-vb6e92">
+								<svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="TwitterIcon">
+									<path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path>
+								</svg><span>Twitter</span></div>
+						</a>
+						<a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways css-1cmznua" href="#">
+							<div class="css-vb6e92">
+								<svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="FacebookIcon">
+									<path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"></path>
+								</svg><span>Facebook</span></div>
+						</a>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class="MuiBox-root css-1k76al1">
+			<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+				<h6 class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter MuiTypography-gutterBottom css-a2yyq6">Footer</h6>
+				<p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-1yqxwau">Something here to give the footer a purpose!</p>
+				<p class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-rdifmp">Copyright © <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-19t329g" href="https://mui.com/">Your Website</a>
+					<!-- -->2021
+					<!-- -->.</p>
+			</div>
+		</footer>
+	</div>
+	<script>
+	window.ga = window.ga || function() {
+		(ga.q = ga.q || []).push(arguments)
+	};
+	ga.l = +new Date;
+	window.ga('create', 'UA-106598593-2', 'auto');
+	</script>
+	<script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"userLanguage":"en"}},"page":"/getting-started/templates/blog","query":{"userLanguage":"en"},"buildId":"o8c8KF9OQbsS7lzsyZqWn","nextExport":true,"isFallback":false,"appGip":true,"scriptLoader":[]}</script>
+</body>
+
+</html>
